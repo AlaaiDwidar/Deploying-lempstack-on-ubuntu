@@ -89,12 +89,19 @@ phpinfo();'
 
 `sudo vim /var/www/html/todo_list.php`
 
-`put your database info:
+put your database info:
+
+
+
 <?php
 $user = "example_user";
+
 $password = "password";
+
 $database = "php_database";
+
 $table = "todo_list";
+
 
 try {
   $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
@@ -102,12 +109,13 @@ try {
   foreach($db->query("SELECT content FROM $table") as $row) {
     echo "<li>" . $row['content'] . "</li>";
   }
+  
   echo "</ol>";
 } catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
 }
-`
+
 
 test youdatabase
 
