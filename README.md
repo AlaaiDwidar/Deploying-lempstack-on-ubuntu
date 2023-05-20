@@ -55,7 +55,8 @@ and put the content of your website
   </body>
 </html>
 
-3)Reload nginx
+ 3)Reload nginx
+
 `systemctl restart nginx`
 
 ![image](https://github.com/AlaaiDwidar/Deploying-lempstack-on-ubuntu/assets/99266660/54a3d08f-b2bb-4ee4-ab75-8034b28c55de)
