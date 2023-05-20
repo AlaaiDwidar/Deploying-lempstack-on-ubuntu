@@ -70,18 +70,26 @@ phpinfo();'
 
 ![image](https://github.com/AlaaiDwidar/Deploying-lempstack-on-ubuntu/assets/99266660/e106fb15-f04b-4529-b99f-1aaf060eff16) 
 ## Step 6 — Testing Database Connection from PHP
+
 `sudo mysql -uroot -p`
+
 `CREATE DATABASE php_database;`
+
 `CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`
+
 `GRANT ALL ON php_database.* TO 'example_user'@'%';`
+
 `CREATE TABLE Php_database.todo_list (
 	item_id INT AUTO_INCREMENT,
 	content VARCHAR(255),
 	PRIMARY KEY(item_id)
 );`
+
 `exit`
+
 `sudo vim /var/www/html/todo_list.php`
-put your database info:
+
+`put your database info:
 <?php
 $user = "example_user";
 $password = "password";
@@ -99,11 +107,58 @@ try {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
 }
+`
+
 test youdatabase
+
 `http://server_domain_or_IP/todo_list.php`
 
 
+
 ![image](https://github.com/AlaaiDwidar/Deploying-lempstack-on-ubuntu/assets/99266660/6cf5c4a5-75de-4d12-8674-7081f1be82bc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
