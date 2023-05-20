@@ -40,7 +40,7 @@ then `exit` after test
 
 `1)cd  /var/www/html/`
 
-`2)vim index.html'
+`2)vim index.html`
 
 and put the content of your website
 
@@ -56,7 +56,7 @@ and put the content of your website
 </html>
 
 3)Reload nginx
-`systemctl restart nginx'
+`systemctl restart nginx`
 
 ![image](https://github.com/AlaaiDwidar/Deploying-lempstack-on-ubuntu/assets/99266660/54a3d08f-b2bb-4ee4-ab75-8034b28c55de)
 
